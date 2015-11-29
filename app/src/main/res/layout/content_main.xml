@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <DatePicker
+
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:calendarViewShown="false" />
+    <Button
+
+        android:id="@+id/btn"
+        android:layout_width="144dp"
+        android:layout_height="10dip"
+        android:enabled="false"
+        android:text="클릭"
+        android:layout_gravity="right"
+        android:layout_weight="0.38"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/txtdate"
+        android:background="#e8b4b4" />
+
+    <TextView
+
+        android:id="@+id/txtdate"
+        android:onClick="mOnClick"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="date"
+        android:background="#f1a7a7" />
+
+    <EditText
+
+        android:id="@+id/diary"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dip"
+
+        android:layout_weight="4"
+
+        android:background="#fbd2d4"
+
+        android:lines="8"
+        android:layout_below="@+id/btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
